@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: Glyphter;
+	src: url("../font/Glyphter.ttf") format("truetype");
+	font-display: block;
+}
+#window {
+	background-color: rgb(255, 255, 255);
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	height: 100vh;
+}
+/* ===============================panel_left=============================== */
+#panel_left {
+	background-color: rgb(255, 255, 255);
+	display: grid;
+	grid-template-rows: max-content auto;
+	padding: 0.5rem;
+}
+
+#control_btns {
+	display: flex;
+	padding: 0.5rem 0 0 0;
+	gap: 0.9rem;
+}
+
+#open_file {
+	display: none;
+}
+
+#btn_open,
+#btn_clear,
+#btn_save {
+	width: -webkit-fill-available;
+}
+
+#canvas_container {
+	display: flex;
+	padding: 0.5rem;
+	background-color: rgb(255, 255, 255);
+}
+
+#canvas,
+#plate_preview {
+	background-color: rgb(184, 184, 184);
+}
+
+/* ===============================panel_right=============================== */
+#panel_right {
+	background-color: rgb(255, 255, 255);
+	padding: 0.5rem;
+	display: grid;
+	grid-template-rows: min-content min-content;
+}
+
+select {
+	padding: 9px 0 9px 9px !important;
+	border-top: 0.5px solid #ededed !important;
+}
+
+#plate {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 0.9rem;
+}
+
+#plate_lbl {
+	grid-column: 1/4;
+}
+
+#control_btns_2 {
+	display: flex;
+	grid-column: 1/4;
+	gap: 0.9rem;
+}
+
+#btn_generate,
+#btn_clear_2 {
+	width: -webkit-fill-available;
+}
+#plate_preview_container {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: min-content min-content;
+	gap: 0.9rem;
+}
+
+#plate_preview_lbl,
+#btn_edit,
+#plate_preview_wrapper {
+	grid-column: 1/3;
+}
